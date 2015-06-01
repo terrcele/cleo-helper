@@ -300,9 +300,9 @@ public class MainActivity extends Activity
                 // RingTo API to obtain token
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(4);
                 nameValuePairs.add(new BasicNameValuePair("action", "l"));
-                nameValuePairs.add(new BasicNameValuePair("password", "5523parabal"));
+                nameValuePairs.add(new BasicNameValuePair("password", ""));
                 nameValuePairs.add(new BasicNameValuePair("token", "t"));
-                nameValuePairs.add(new BasicNameValuePair("email", "terrincelestin@gmail.com"));
+                nameValuePairs.add(new BasicNameValuePair("email", ""));
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                 HttpResponse httpResponse = httpClient.execute(httpPost);
                 HttpEntity httpEntity = httpResponse.getEntity();
